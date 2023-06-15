@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('build stage') {
+      steps {
+        sh 'docker build -t myimage:01 .'
+      }
+    }
+
   }
 }
