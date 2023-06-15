@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('run stage') {
+      steps {
+        sh 'docker run -itd --name apache -p 4000:80'
+      }
+    }
+
   }
 }
