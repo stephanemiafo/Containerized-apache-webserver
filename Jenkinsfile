@@ -12,8 +12,8 @@ pipeline {
         branch "pract*"   // This stage is specific only to branches that start with pract.
       }
       steps {
-        sh '''
-          cat README
+        bat '''
+          type README
         '''  
       }
     }
